@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf');
+}
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf');
+}
+@font-face {
+  font-family: 'DentonTextXCondTest-Light';
+  src: url('fonts/DentonTextXCondTest-LightItalic.otf');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+    background-color: rgba(15, 36, 48, 0.8);
+    padding: 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(225, 122, 71, 0.6);
+}
+
+.logo img{
+  top: 30px;
+  left: 30px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+    background-image: url("mountain.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EFC958;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 30px; 
+}
+
+.hero h1 {
+    padding-top: 3vh;
+    position: relative;
+    font-family: Satoshi-Regular;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: #000000;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.b1, .b2, .b3 {
+   
+    display: inline-block;
+    font-family: Satoshi-Regular;
+    font-weight: 900;
+    font-style: bold;
+    padding-top: 3vh;
+    font-size: 1.5rem;
+    overflow: hidden;
+    margin: 5px;
+    width:30vw;
+    height:60vh;
+    background-color: rgba(0, 0, 0, 0.448);
+    padding-bottom: 10vh;
+    border-radius: 24px;
+ }
+
+.b1 {
+    
+    background-image: url("flight.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b2 {
+    background-image: url("hotel.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b3 {
+    background-image: url("room.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid #EFC958;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: #EFC958;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+}
+
+button span {
+    margin: 10px;
+}
+
+button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+}
+
+button:hover {
+    color: #fff;
+    border: 1px solid #E17A47;
+}
+
+button:hover::before {
+    box-shadow: inset 0 0 0 10em #E17A47;
+}
+
+footer {
+    background: #E17A47;
+    opacity: 0.8;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+.socials img {
+    width: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.socials img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.copyright {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 15px;
+}
